@@ -11,8 +11,241 @@
 			crossorigin="anonymous"
 		/>
      <script src="https://kit.fontawesome.com/be6d2b291d.js" crossorigin="anonymous"></script>
+
+<style>
+.nav-tabs
+{
+    border:none;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #656262;
+}
+
+.nav-pills .nav-link {
+    color: #656262;
+   
+}
+
+.card-columns .card{
+    margin-bottom: 0.2%;
+}
+
+
+   
+</style>     
 </head>
+
 <body>
-    <h1> PRUEBA </h1>
+    
+       
+         <!--BARRA DE NAVEGACIÓN-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <div class="container">
+                <a class="navbar-brand text-secondary h1 title" href="#" >
+                            <i class="fab fa-instagram"></i>
+                            <em>Instagram</h1></em>
+                </a>
+              
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#example-modal-lg" >Create a new post</button>
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Action</button>
+                                    <button class="dropdown-item" type="button">Another action</button>
+                                    <button class="dropdown-item" type="button">Something else here</button>
+                                    <div class="dropdown-divider"></div>
+                                    <button class="dropdown-item" type="button">Log out</button>
+                                </div>
+                            </div>
+                            </ul>
+                    </div>        
+            </div>  
+         </nav>
+            
+
+
+            <!--VISTA-SELECTOR-->
+ 
+        <div class ="row ">
+        <div class ="col-12 col-center">
+
+            <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">  <i class="fa fa-th"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"> <i class="fa fa-square"></i></a>
+                </li>             
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container-fluid">
+                        <div class="row no-gutters image-grid">
+                                                 
+                          
+                            <div class= "container"><!--grid  --> 
+                                <div class="card-columns">
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/1	" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/2	" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/8	" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/7	" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/6	" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/5" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="https://placeimg.com/400/400/animals/3" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/animals/4" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/tech/19" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/tech/10" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/tech/11" alt="Card image cap"></div>
+                                    <div class="card "> <img  src="	https://placeimg.com/400/400/tech/12" alt="Card image cap"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!--Instagram Feed-->
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">  
+    <div class="container-fluid" style="background-color:#D7DBDD;">  
+                <div class="row justify-content-center py-4">
+                    <div class="col-6">
+                        <div class="card mb-3 post">
+                             <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                   <h5 class="card-title">My first photo</h5>
+                                  <p class="text-muted">12/15</p>
+                             </div>
+                             <img src="https://placeimg.com/400/400/animals/1" class="card-img-top"  alt="random">
+                             <div class="card-body p-2">
+                                   <p><strong>23 likes</strong></p>
+                                  <p class="card-text">Some random text about the random picture.</p>
+                                 <div class="d-flex justify-content-between">
+                                      <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                      <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                 </div>
+                             </div>
+                        </div>
+
+
+                            <div class="card mb-3 post">
+                             <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                   <h5 class="card-title">My first photo</h5>
+                                  <p class="text-muted">12/15</p>
+                             </div>
+                             <img src="https://placeimg.com/400/400/animals/2" class="card-img-top"  alt="random">
+                             <div class="card-body p-2">
+                                   <p><strong>23 likes</strong></p>
+                                  <p class="card-text">Some random text about the random picture.</p>
+                                 <div class="d-flex justify-content-between">
+                                      <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                      <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                 </div>
+                             </div>
+                           </div>
+
+                                <div class="card mb-3 post">
+                             <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                   <h5 class="card-title">My first photo</h5>
+                                  <p class="text-muted">12/15</p>
+                             </div>
+                             <img src="https://placeimg.com/400/400/animals/3" class="card-img-top"  alt="random">
+                             <div class="card-body p-2">
+                                   <p><strong>23 likes</strong></p>
+                                  <p class="card-text">Some random text about the random picture.</p>
+                                 <div class="d-flex justify-content-between">
+                                      <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                      <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                 </div>
+                             </div>
+                           </div>
+
+                                <div class="card mb-3 post">
+                             <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                   <h5 class="card-title">My first photo</h5>
+                                  <p class="text-muted">12/15</p>
+                             </div>
+                             <img src="https://placeimg.com/400/400/animals/4" class="card-img-top"  alt="random">
+                             <div class="card-body p-2">
+                                   <p><strong>23 likes</strong></p>
+                                  <p class="card-text">Some random text about the random picture.</p>
+                                 <div class="d-flex justify-content-between">
+                                      <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                      <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                 </div>
+                             </div>
+                           </div>
+
+                                <div class="card mb-3 post">
+                             <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                   <h5 class="card-title">My first photo</h5>
+                                  <p class="text-muted">12/15</p>
+                             </div>
+                             <img src="https://placeimg.com/400/400/animals/5" class="card-img-top"  alt="random">
+                             <div class="card-body p-2">
+                                   <p><strong>23 likes</strong></p>
+                                  <p class="card-text">Some random text about the random picture.</p>
+                                 <div class="d-flex justify-content-between">
+                                      <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                      <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                 </div>
+                             </div>
+                           </div>
+
+
+
+                    </div>
+                </div>
+                    
+                </div>
+
+                  
+
+                
+                              
+                </div>  <!--final instagram feed-->
+        </div>   
+
+        </div>
+        </div>
+
+        <!--MODAL CREATE NEW POST-->
+        <div class="modal fade" id="example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+   
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+         
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <i class="fa fa-camera fa-border" aria-hidden="true"></i>
+          <i class="fa fa-map-marker fa-border" aria-hidden="true"></i>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        <!--<button type="button" class="btn btn-primary">Send message</button>-->
+        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+<!--SCRIPT BOOTSTRAP-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
